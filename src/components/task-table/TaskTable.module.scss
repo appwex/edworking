@@ -1,0 +1,62 @@
+@import 'styles/common';
+
+$radius: 10px;
+
+.container {
+  width: 350px;
+  height: 600px;
+  padding: 1rem;
+  border-radius: $radius;
+  background: $whiteB;
+  box-shadow: 0 $black80 0px 0px 0px;
+  cursor: pointer;
+
+  &:hover {
+    background: $whiteA;
+  }
+}
+
+.header {
+  @extend .spaceBetween;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  background: $white;
+  border-radius: $radius;
+  box-shadow: 2px 4px 3px 0 $blueShade;
+}
+
+.leftHeader {
+  @extend .flexStart;
+  align-items: center;
+  gap: 0.25rem;
+  width: 90%;
+}
+
+.rightHeader {
+  @extend .flexEnd;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  @extend .clearStl, .flexCenter;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input {
+  @extend .clearStl, .flexCenter;
+  width: 70%;
+  padding: 0.65rem 0.75rem;
+  color: $grayB;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: $radius;
+  border: 1px solid transparent;
+
+  &:focus {
+    border-color: $grayA;
+    width: 100%;
+  }
+}
