@@ -36,10 +36,6 @@ const TaskTable = ({ customClass }) => {
         >
           <button className={stl.btn}>{icon}</button>
         </div>
-
-        {/* <div className={clsx(stl.gridDropdown, showIconOp && stl.show)}>
-          
-        </div> */}
       </div>
     </div>
   )
